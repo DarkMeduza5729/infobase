@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f3c97c8-f110-41c6-a7c7-b2a3c1640ed2">
+  <producedTypes>
+    <objectType typeId="ea47cc38-8e81-44e6-84f6-1888e3fa53f9" valueTypeId="96136dd0-ea2d-4150-8c06-68e5dc1a5c03"/>
+    <refType typeId="471eb57a-e231-4fd5-b690-6f83bb991d8c" valueTypeId="b83294f6-b07a-4f40-9292-61e7c7ddba1c"/>
+    <selectionType typeId="8b36ffed-6b04-4bab-8b5c-6488e64b380d" valueTypeId="e777b704-304e-4ae9-a376-ab7e1fae183d"/>
+    <listType typeId="049b87ef-2f73-4d37-8d3e-ab6af740f81f" valueTypeId="69423c2b-a9ce-4170-9a15-aaa02a4afda9"/>
+    <managerType typeId="9d67d825-71cf-4731-8fda-b7726d61433c" valueTypeId="2e9684a3-84a0-4a03-b773-1a745c7ca20a"/>
+  </producedTypes>
+  <name>Студенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Студенты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Студенты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Студенты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="cfdbbe29-94ec-4256-a849-73040dc2697b">
+    <name>ФИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f9ca0387-b796-46e0-a888-b4918b26e00c">
+    <name>ДатаРождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата рождения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="15caf800-545e-4fbc-a509-23f34e8a175b">
+    <name>Пол</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пол</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

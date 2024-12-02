@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79d250ea-4856-4ab6-8c29-a33dd00b0c83">
+  <producedTypes>
+    <selectionType typeId="9a67c6ff-f181-4a2c-aaae-1a5e9f3d590c" valueTypeId="44b098c8-3b65-4d06-bfab-bc6497109dd5"/>
+    <listType typeId="fcebc32c-953b-4191-8638-879bcb605893" valueTypeId="e306a22c-cde5-4c8f-b4c8-1379700497de"/>
+    <managerType typeId="3ce3ccc3-4111-4d33-8d39-f28f999afdca" valueTypeId="9d7e3724-4e51-4f23-ad09-ed02114c4425"/>
+    <recordSetType typeId="f47641a7-e3b9-4b2b-99fc-c5a08219cfe0" valueTypeId="b385d7c8-ae60-4183-9459-28b3065ba0fc"/>
+    <recordKeyType typeId="624bb2ec-fa65-4275-b778-f1a67d0dddc4" valueTypeId="610b285d-e83c-4e84-9924-f29ec5295a46"/>
+    <recordType typeId="20166ff0-15c2-4992-96bb-efec881ec6e7" valueTypeId="eb0f6a55-87b6-4340-8c12-cb8e863ab9b1"/>
+  </producedTypes>
+  <name>СтоимостьПодарка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость подарка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="7ea8be48-7ee9-46de-9c04-dbdcda8b324f">
+    <name>СтоимостьПодарков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость подарков</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="14fbe6c7-fba7-43c6-bba8-8bf79acc27de">
+    <name>Именинник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Именинник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

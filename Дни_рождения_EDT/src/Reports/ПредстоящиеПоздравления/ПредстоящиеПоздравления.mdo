@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d7db658-967a-491a-839b-509836ff1ab2">
+  <producedTypes>
+    <objectType typeId="a9e2063b-b9d1-4fbd-8b07-02e52dd989e6" valueTypeId="f8d4a4a9-0d45-4863-a90d-bdc38b9c310e"/>
+    <managerType typeId="4729ab6e-e439-44fc-9163-942b01bd1aec" valueTypeId="a83803c9-9cdd-4515-bd27-3ee1cc12b1df"/>
+  </producedTypes>
+  <name>ПредстоящиеПоздравления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предстоящие поздравления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Report>

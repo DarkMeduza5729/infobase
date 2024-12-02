@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fc80b8d-a7f7-4d1e-b015-7fc032f35bd8">
+  <producedTypes>
+    <objectType typeId="2dcfb0ed-0989-429b-9845-91cebb36cbb0" valueTypeId="787eb97f-8b3b-4e7f-bd3e-e6ee9e4e3346"/>
+    <refType typeId="8d71c7d4-64d4-440a-b0d9-8b6f7880ba76" valueTypeId="44a4bdb5-1766-494f-a4c9-7643176fa8eb"/>
+    <selectionType typeId="44dd889b-b614-4761-8838-042c57a78378" valueTypeId="9da2feac-08eb-4041-af8d-2e4a175ea062"/>
+    <listType typeId="65a6170a-1c52-4196-b2b2-14b9f297f9d2" valueTypeId="60ca0b94-1739-4d76-963c-3e5c166de70f"/>
+    <managerType typeId="27726d75-bddf-4d73-b522-3e674e077f15" valueTypeId="b68dadcd-4f99-418e-a347-9a6e1205ed89"/>
+  </producedTypes>
+  <name>ВыдачаДенегНаПодарок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выдача денег на подарок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВыдачаДенегНаПодарок.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ВыданныеДеньги</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="210aea03-5ef1-4196-b82f-a9ab321b138c">
+    <name>Именинник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Именинник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dcded7d8-3ba4-4e47-aac4-0ef03794abad">
+    <name>СуммаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма выдачи</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="87e416f1-9758-4219-8d83-0cff2e71cf6e">
+    <producedTypes>
+      <objectType typeId="9b39fd26-37fe-471a-bee0-ed0f6cceb53c" valueTypeId="0da5f8e7-b067-4aa8-92bd-d306f6a5bd44"/>
+      <rowType typeId="edd3c7c5-e893-4554-96d9-1688b78dedc0" valueTypeId="16e09d92-838d-46c0-b903-f575fa29522b"/>
+    </producedTypes>
+    <name>Выдача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдача</value>
+    </synonym>
+    <attributes uuid="54c4ec76-ca11-4a1d-908d-be73092270d8">
+      <name>КомуВыдавать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Кому выдавать</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Студенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="30588288-a3a5-4417-80c4-884971bee360">
+      <name>СколькоВыдавать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сколько выдавать</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

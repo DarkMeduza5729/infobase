@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d73cca97-57be-4296-9fb4-127977e03742">
+  <producedTypes>
+    <objectType typeId="4511a99a-62e1-43c1-837e-22bdb449dd1d" valueTypeId="c731451d-16f6-49c5-86ef-bc0efb2e3a3b"/>
+    <managerType typeId="262552cb-f20c-45ef-9435-1384ec877139" valueTypeId="10d0b5bf-4255-40ed-930f-b920b1cfb993"/>
+  </producedTypes>
+  <name>Именинники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Именинники</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="24675cf1-bb2b-4ba7-9ac5-4b98c9b84751">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

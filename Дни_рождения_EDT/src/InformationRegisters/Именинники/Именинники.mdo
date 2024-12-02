@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e2763b96-e9b8-46af-ade7-a3f1a31dcfb1">
+  <producedTypes>
+    <selectionType typeId="e72a0091-00a5-449a-bff8-5590ec7e1eda" valueTypeId="b4b23d52-486d-4d67-9e4e-f0e2f5b064ac"/>
+    <listType typeId="9f882d9d-ab59-49a0-9fad-569e4aa9341e" valueTypeId="e8ace11f-3edc-4dbf-840b-bf6be6b35623"/>
+    <managerType typeId="34f4aec8-c988-43b8-a586-d04e4ffebb33" valueTypeId="6c045f39-0e35-468a-a2f5-1f3c12a2f5b7"/>
+    <recordSetType typeId="22f9d4e8-c53d-437e-a834-337bb8b44b84" valueTypeId="9ea1a9d1-6289-4241-948e-f1b5909b426a"/>
+    <recordKeyType typeId="403eccc0-12c0-43d8-9740-fb0a7ec3d3a8" valueTypeId="1f6f5983-dd0d-4aa4-9a14-e90818a6fa52"/>
+    <recordType typeId="a1b283b7-abb6-4612-94ea-2258628a0803" valueTypeId="8ce8fba8-a163-40f4-b897-deb7ac607245"/>
+    <recordManagerType typeId="4c1c534e-740d-40b8-b423-678318483016" valueTypeId="fae195a4-b665-41b0-9cc3-d125799621b8"/>
+  </producedTypes>
+  <name>Именинники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Именинники</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="32e6fabb-9ce9-4eb4-a12f-141d02411f77">
+    <name>ДатаРождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата рождения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0d2544ac-4702-48d8-9336-46ce791ad136">
+    <name>Возраст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возраст</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3dd96e37-b07e-4a36-9f64-300d4f6c5c75">
+    <name>Студенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Студенты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="611561a5-c84d-4b2e-8345-820e6d2d0847">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:InformationRegister>

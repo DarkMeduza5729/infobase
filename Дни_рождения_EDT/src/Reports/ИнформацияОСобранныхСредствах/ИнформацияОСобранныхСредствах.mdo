@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b23e1b4-4e79-49e8-95b9-0c4db9f2a6e3">
+  <producedTypes>
+    <objectType typeId="a6841492-f7e7-407f-bc97-4533ae6f4924" valueTypeId="da720a1c-49d4-4dd3-92e8-74e6a5b88ce0"/>
+    <managerType typeId="a9b006e5-ef38-4a2b-a860-a6681e259373" valueTypeId="84d633a8-d394-41b0-9e10-cd52f7a4dfae"/>
+  </producedTypes>
+  <name>ИнформацияОСобранныхСредствах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информация о собранных средствах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Report>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5830a56-3f6f-4298-b000-c1426692f9de">
+  <producedTypes>
+    <objectType typeId="4bfaf96f-8a20-4b26-bbda-5ecd9218a4d0" valueTypeId="2dee712f-9204-4323-af51-1a48820e9d3b"/>
+    <refType typeId="beb7ee48-f69c-4bf0-ab2d-060cb3b40597" valueTypeId="88f34656-8a39-43c3-8ace-157d510c1504"/>
+    <selectionType typeId="d914721f-b067-4015-928b-5722f1e2ee16" valueTypeId="80cc2c76-530d-4440-a46c-7f5ecadb134c"/>
+    <listType typeId="c70fb901-dcd2-44b2-82d9-8d360fb688ad" valueTypeId="cfc8c219-1d3f-4069-a942-6d2485839c45"/>
+    <managerType typeId="6c5a0dc1-fad1-42ca-8d60-4fcd302abba4" valueTypeId="9fd2dbf4-2eff-4b35-bff2-2fa59c56df24"/>
+  </producedTypes>
+  <name>КтоСколькоСдал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кто сколько сдал</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.КтоСколькоСдал.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.СобранныеДеньги</registerRecords>
+  <registerRecords>AccumulationRegister.КтоСколькоСдалВсего</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="a1f26a02-d675-431d-a638-bde737f9e658">
+    <name>Именинник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Именинник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8865bf25-b274-494a-956a-188293ae5bcc">
+    <name>СуммаСдано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма сдано</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="38e01b8e-197d-4787-a0ac-c0277f90dc0c">
+    <producedTypes>
+      <objectType typeId="a1b4d62b-660f-4c7d-9588-77dc94dd7567" valueTypeId="66df8793-817f-4ee3-b119-49b42121d73d"/>
+      <rowType typeId="0a2fbaf7-371e-4ce5-9b26-b09537d2deed" valueTypeId="93c22f7e-8161-4ac3-8069-7444ee1f9929"/>
+    </producedTypes>
+    <name>Сдано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сдано</value>
+    </synonym>
+    <attributes uuid="0aac6779-a7ec-44ef-ace0-18aebc487d35">
+      <name>КтоСдал</name>
+      <synonym>
+        <key>ru</key>
+        <value>Кто сдал</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Студенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1661f741-359f-4e8c-8dcc-d5ed2c4ca0b0">
+      <name>СколькоСдал</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сколько сдал</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

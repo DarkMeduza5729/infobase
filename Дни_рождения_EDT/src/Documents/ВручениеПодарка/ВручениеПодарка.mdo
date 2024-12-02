@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68aef310-f8fa-4669-98b9-e58c281cb20b">
+  <producedTypes>
+    <objectType typeId="a8091954-62c0-4bb8-a883-b6f289de5239" valueTypeId="4f25d3a7-94c6-4206-a2f3-362ee84e03c9"/>
+    <refType typeId="978a5e7c-49d9-4eb4-a87e-e1b834c44b36" valueTypeId="e5b7a34b-1fd7-4153-953e-45502bee9b2e"/>
+    <selectionType typeId="74498ebe-49f9-4a4c-84ab-7f462222d147" valueTypeId="bd4c4524-d5e1-444d-b4a4-445e466f30a1"/>
+    <listType typeId="40a362cd-0e28-412d-83cc-84ff4731ce5a" valueTypeId="10e4380b-bc30-4f0c-9116-a784d593d615"/>
+    <managerType typeId="4a131788-ab09-4b88-812e-f8694ff56fe2" valueTypeId="7fccd4a4-8d43-479f-a61f-e29d963cae49"/>
+  </producedTypes>
+  <name>ВручениеПодарка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вручение подарка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВручениеПодарка.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.НаКакуюСуммуПолучилПодарков</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="a8d49689-43a8-48cc-9223-c9e572d6556b">
+    <name>Именинник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Именинник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a95c98ef-bdd9-40bd-96db-c8634d7e023a">
+    <name>НазваниеПодарка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название подарка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4980492c-02d7-496a-a660-46f43568d65c">
+    <name>СтоимостьПодарка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость подарка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

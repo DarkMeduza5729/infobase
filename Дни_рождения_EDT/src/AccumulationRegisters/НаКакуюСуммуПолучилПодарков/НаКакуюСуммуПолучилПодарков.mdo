@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b235930-e2b6-4326-a6f3-9506a834b7f5">
+  <producedTypes>
+    <selectionType typeId="25b42592-45b1-4da5-a422-20bba85caeee" valueTypeId="a6119599-0ee9-4689-a52d-b605790cccf1"/>
+    <listType typeId="cc0e4ae7-9815-4d7b-b6ca-03be0651983d" valueTypeId="28f00155-538f-4264-9fc7-753bcf9553d6"/>
+    <managerType typeId="769bf53a-0f4b-4fc3-8ad7-ee3663eaf3d3" valueTypeId="5f072373-d518-47c5-8a17-ce3d79bcfb28"/>
+    <recordSetType typeId="bf261f74-6ab2-4213-b7f3-ced8f7c5ebad" valueTypeId="04bbe769-2e17-4f0d-ab7e-fa1880a1ddcf"/>
+    <recordKeyType typeId="fed71fbf-023d-42e0-a069-a3039d05a406" valueTypeId="6f057edd-9321-4e85-b5ea-ac46854c21ce"/>
+    <recordType typeId="e0552d53-126d-4284-a0bf-393a6d39d79e" valueTypeId="a38d2c9c-492c-4a59-af2e-bfb4ae8c82b3"/>
+  </producedTypes>
+  <name>НаКакуюСуммуПолучилПодарков</name>
+  <synonym>
+    <key>ru</key>
+    <value>На какую сумму получил подарков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="7287986e-52b8-4a81-839a-e9ddd2c7dca7">
+    <name>СуммаСтоимостиПодарков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма стоимости подарков</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="f7d8dfb7-c70d-4428-ac02-65f700d8cf58">
+    <name>Студент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Студент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

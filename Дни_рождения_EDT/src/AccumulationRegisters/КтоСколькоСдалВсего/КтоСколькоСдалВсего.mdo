@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c780026b-3012-405f-bf94-94a48391a73d">
+  <producedTypes>
+    <selectionType typeId="1c807892-a1bd-4beb-b863-6c9d6ab2313e" valueTypeId="a24bc9d1-afe4-4820-ac8f-17c4846fb6ba"/>
+    <listType typeId="d046f157-078e-4f9b-8b60-397e2831808c" valueTypeId="2d31322e-ddbf-4d34-a225-34e9f231cd3b"/>
+    <managerType typeId="0cec37f9-b26d-4f7c-9a3e-65fd7457bb72" valueTypeId="90f2e7b2-01ed-4d29-875c-129170274d63"/>
+    <recordSetType typeId="b9fc6aee-ea36-4314-ba94-c07768e75e79" valueTypeId="b5059930-c0ea-417a-8f66-f0ff80be566a"/>
+    <recordKeyType typeId="fa70b464-1608-48ed-8b90-ccb86f30f194" valueTypeId="ba2924e3-5ad1-49a5-be2e-407cd435863c"/>
+    <recordType typeId="737db0ee-1d77-4dfb-b86b-c24353510663" valueTypeId="58aef1bc-3e7e-428b-ae73-76acb167837a"/>
+  </producedTypes>
+  <name>КтоСколькоСдалВсего</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кто сколько сдал всего</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="edc37c24-29d4-44cd-b5d5-fe63970fbb9f">
+    <name>СуммаСдано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма сдано</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="986a8fe8-f675-4d32-abd3-f02fb56980ae">
+    <name>Студент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Студент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

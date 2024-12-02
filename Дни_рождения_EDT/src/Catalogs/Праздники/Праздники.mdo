@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6dbeb255-cc8e-412e-882b-b65554a68ca8">
+  <producedTypes>
+    <objectType typeId="f509335b-f4a9-435f-adad-f38aec98c4e5" valueTypeId="cd50462c-4f44-489b-8993-859f9bd45ffd"/>
+    <refType typeId="00055d01-35e2-4ee6-a092-350a0df482ea" valueTypeId="fd4825a7-b443-40b6-b8c5-4327bc03ca88"/>
+    <selectionType typeId="7d776e61-9b27-47fc-8008-01525147d416" valueTypeId="90baafd7-06a7-4e15-9538-a679f56916f4"/>
+    <listType typeId="cfdeb04d-d24a-47fe-b7ec-b7eccc124169" valueTypeId="93564ff3-f3b4-4472-950b-97884985be34"/>
+    <managerType typeId="87cc760c-703b-4a3b-a82b-6ffb327384c0" valueTypeId="ab0ec7eb-94c5-4028-b9b5-90a8a46067cb"/>
+  </producedTypes>
+  <name>Праздники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Праздники</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Праздники.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Праздники.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="d0796862-8153-4a2b-bd6e-c1b567496d8b">
+    <name>НазваниеПраздника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название праздника</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="935f3675-5744-44e2-b75a-d88b970ec576">
+    <name>ДатаПраздника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата праздника</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

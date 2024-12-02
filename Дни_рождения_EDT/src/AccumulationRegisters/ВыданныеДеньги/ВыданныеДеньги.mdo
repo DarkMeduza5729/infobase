@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d6caaf8b-d1f8-4cde-bc13-d05216982083">
+  <producedTypes>
+    <selectionType typeId="187cf1cf-f6d9-46d1-85bb-312351ee1a7f" valueTypeId="84a90c17-292a-4f50-a55f-8182f96163a8"/>
+    <listType typeId="9f518452-cbd6-459b-bc3e-f46a5d9b541f" valueTypeId="b4d27627-68f9-4fdb-a184-d79cb2ec2598"/>
+    <managerType typeId="9dbb87c4-00fc-45e7-a232-b10868650208" valueTypeId="3af0c8bd-9403-462b-8713-e219ad4831b1"/>
+    <recordSetType typeId="c8cdedf7-dbe5-4edc-960d-99b09fed9509" valueTypeId="4f23c6f3-1166-4a8a-a341-7a5a48a9056b"/>
+    <recordKeyType typeId="a812b0f2-9b39-4c19-98f1-9389cc34ffd8" valueTypeId="2bce25ad-c7ed-4694-9a0b-d5c90f0d2fb0"/>
+    <recordType typeId="b162d30c-e459-4bcf-8d5b-3bcf61e769ad" valueTypeId="ad085447-3d2f-466f-b94b-e8b8c3883e34"/>
+  </producedTypes>
+  <name>ВыданныеДеньги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выданные деньги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="c56a0650-8b77-488a-8e56-25c74aa83ecd">
+    <name>СуммаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма выдачи</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="a116248c-1b47-4d6d-a868-67f00cc0b029">
+    <name>Именинник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Именинник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="05ff8924-8a17-4285-b466-339ac7d75cd3">
+    <name>КомуВыдали</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кому выдали</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
