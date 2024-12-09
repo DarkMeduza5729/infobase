@@ -36,6 +36,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <constants>Constant.Константа</constants>
+  <constants>Constant.Константа1</constants>
   <catalogs>Catalog.Студенты</catalogs>
   <catalogs>Catalog.Праздники</catalogs>
   <documents>Document.КтоСколькоСдал</documents>
